@@ -47,7 +47,7 @@ class Navbar extends Component {
                     />
 
                     <Drawer
-                        title="Navigation"
+                        title={<span className="logoDrawer">Wimm Media</span>}
                         placement="right"
                         closable={false}
                         onClose={this.onClose}
