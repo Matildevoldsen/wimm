@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
-import { Drawer, Button } from "antd";
+import { Drawer, Button, Icon } from "antd";
 import './index.css';
 
 class Navbar extends Component {
@@ -11,7 +11,7 @@ class Navbar extends Component {
 
         this.state = {
             current: "mail",
-            visible: false
+            visible: false,
         };
 
         this.showDrawer = this.showDrawer.bind(this);
@@ -36,21 +36,28 @@ class Navbar extends Component {
                 </div>
                 <div className="menuCon">
                     <div className="leftMenu">
-                        <LeftMenu />
+                        <LeftMenu mode='horizontal' />
                     </div>
                     <div className="rightMenu">
-                        <RightMenu />
+                        <RightMenu mode='horizontal' />
                     </div>
 
+                    <Button
+                        className="hamburger"
+                        type="default"
+                        icon="menu"
+                        onClick={this.showDrawer}
+                    />
+
                     <Drawer
-                        title="Basic Drawer"
+                        title="Navigation"
                         placement="right"
                         closable={false}
                         onClose={this.onClose}
                         visible={this.state.visible}
                     >
-                        <LeftMenu />
-                        <RightMenu />
+                        <LeftMenu mode='vertical' />
+
                     </Drawer>
                 </div>
             </nav>
