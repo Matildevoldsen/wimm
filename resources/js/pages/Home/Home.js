@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Home.css";
+import "./Home.scss";
 import { Icon } from 'antd';
 import QueueAnim from "rc-queue-anim";
 import TweenOne from 'rc-tween-one';
@@ -80,7 +80,7 @@ class Home extends Component {
     render() {
         return (
             <div className="banner0">
-                <QueueAnim key="QueueAnim" type={["bottom", "top"]} delay={200}>
+                <QueueAnim key="QueueAnim" type={["bottom", "top"]} delay={320}>
                     <div className="banner0-content">
                         <Texty className="title" enter={this.getEnter} leave={this.getEnter}>Wimm Media</Texty>
                         <Texty className="subtitle" enter={this.getEnter} leave={this.getEnter}>We help you build user-friendly websites that ranks higher on Google.</Texty>

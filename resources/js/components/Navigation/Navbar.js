@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { Drawer, Button, Icon } from "antd";
-import './index.css';
+import './Navbar.scss';
 
 class Navbar extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class Navbar extends Component {
                 <div className="logo">
                     <Link to="/">Wimm Media</Link>
                 </div>
-                <div className="menuCon">
+                <div className="menuCon" id="menuCon">
                     <div className="leftMenu">
                         <LeftMenu mode='horizontal' />
                     </div>
