@@ -38,9 +38,6 @@ class Navbar extends Component {
                     <div className="leftMenu">
                         <LeftMenu mode='horizontal' />
                     </div>
-                    <div className="rightMenu">
-                        <RightMenu mode='horizontal' />
-                    </div>
 
                     <Button
                         className="hamburger"
@@ -57,7 +54,6 @@ class Navbar extends Component {
                         visible={this.state.visible}
                     >
                         <LeftMenu mode='vertical' />
-
                     </Drawer>
                 </div>
             </nav>
