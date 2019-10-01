@@ -50,7 +50,7 @@ class NotFound extends Component {
                 >
                     <Result
                         status="404"
-                        title="404"
+                        title="404 Page Not Found"
                         subTitle={
                             <Typography.Paragraph>
                                 Sorry, the page you visited does not exist. If you believe this was a mistake please submit feedback using the button below.
