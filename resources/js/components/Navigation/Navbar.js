@@ -32,11 +32,11 @@ class Navbar extends Component {
         return (
             <nav className="menuBar">
                 <div className="logo">
-                    <Link to="/">Wimm Media</Link>
+                    <img src={require("./Logo.svg")}/>
                 </div>
                 <div className="menuCon" id="menuCon">
-                    <div className="leftMenu">
-                        <LeftMenu mode='horizontal' />
+                    <div className="rightMenu">
+                        <RightMenu mode='horizontal' />
                     </div>
 
                     <Button
@@ -47,13 +47,13 @@ class Navbar extends Component {
                     />
 
                     <Drawer
-                        title={<span className="logoDrawer">Wimm Media</span>}
+                        title={<span className="logoDrawer"><img src={require("./Logo.svg")}/></span>}
                         placement="right"
                         closable={false}
                         onClose={this.onClose}
                         visible={this.state.visible}
                     >
-                        <LeftMenu mode='vertical' />
+                        <RightMenu mode='vertical' />
                     </Drawer>
                 </div>
             </nav>

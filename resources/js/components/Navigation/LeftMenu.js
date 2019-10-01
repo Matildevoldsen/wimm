@@ -21,6 +21,10 @@ class LeftMenu extends Component {
           <Link to="/about">About Us</Link>
         </Menu.Item>
 
+        <Menu.Item key="blog">
+          <Link to="/about">Blog</Link>
+        </Menu.Item>
+
         <Menu.Item key="contact">
           <Link to="/contact">Contact Us</Link>
         </Menu.Item>

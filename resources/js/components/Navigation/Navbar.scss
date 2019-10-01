@@ -2,22 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 .menuBar {
-    padding: 0 20px;
+    padding: 4px 20px;
     border-bottom: solid 1px #e8e8e8;
     overflow: auto;
     box-shadow: 0 0 30px #f3f1f1;
 }
+
 .logo {
-    width: 150px;
+    width: 300px;
     float: left;
 }
-.logo a {
-    display: inline-block;
-    font-size: 18px;
-    padding: 19px 20px;
-    font-family: 'Playfair Display';
-    color: #262626;
-    text-transform: capitalize;
+
+.logo img {
+    width: 300px;
 }
 
 .logoDrawer {
@@ -26,7 +23,7 @@
 }
 
 .menuCon {
-    width: calc(100% - 150px);
+    width: calc(100% - 300px);
     float: left;
 }
 .menuCon .ant-menu-item {
@@ -80,7 +77,7 @@
     .menuBar #menuCon .hamburger {
         display: block;
         float: right;
-        margin-top: 3px;
+        margin-top: 12px;
         padding-top: 3px;
         width: 43px;
         height: 40px;
