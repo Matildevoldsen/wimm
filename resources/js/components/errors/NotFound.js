@@ -53,8 +53,7 @@ class NotFound extends Component {
                         title="404"
                         subTitle={
                             <Typography.Paragraph>
-                                Sorry, the page you visited does not exist.
-                                <Link to="/contact">Contact Page</Link>
+                                Sorry, the page you visited does not exist. If you believe this was a mistake please submit feedback using the button below.
                             </Typography.Paragraph>
                         }
                         extra={
