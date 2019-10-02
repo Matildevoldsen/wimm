@@ -92,7 +92,16 @@
 @media screen and (max-width: 767px) {
     .banner0 {
         background-attachment: inherit;
+
+        .banner0-content {
+            width: 95%;
+
+            .title {
+                font-size: 39px;
+            }
+        }
     }
+
     .banner0 .banner0-text-wrapper {
         width: 90%;
     }

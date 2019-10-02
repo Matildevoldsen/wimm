@@ -82,7 +82,7 @@ class Home extends Component {
             <div className="banner0">
                 <QueueAnim key="QueueAnim" type={["bottom", "top"]} delay={320}>
                     <div className="banner0-content">
-                        <Texty className="title" enter={this.getEnter} leave={this.getEnter}>Wimm Media</Texty>
+                        <Texty className="title" enter={this.getEnter} leave={this.getEnter}>We help building the web</Texty>
                         <Texty className="subtitle" enter={this.getEnter} leave={this.getEnter}>We help you build user-friendly websites that ranks higher on Google.</Texty>
                     </div>
                 </QueueAnim>

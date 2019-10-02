@@ -32,7 +32,9 @@ class Navbar extends Component {
         return (
             <nav className="menuBar">
                 <div className="logo">
-                    <img src={require("./Logo.svg")}/>
+                    <object type="image/svg+xml" data={require("./Logo.svg")}>
+                        Wimm Media
+                    </object>
                 </div>
                 <div className="menuCon" id="menuCon">
                     <div className="rightMenu">

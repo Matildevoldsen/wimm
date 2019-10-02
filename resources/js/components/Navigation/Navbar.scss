@@ -1,5 +1,5 @@
 @import "~antd/dist/antd.css";
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 
 .menuBar {
     padding: 4px 20px;
@@ -13,12 +13,14 @@
     float: left;
 }
 
-.logo img {
+.logo img,
+.logo svg,
+.logo object {
     width: 300px;
 }
 
 .logoDrawer {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     color: #262626;
 }
 
@@ -72,8 +74,57 @@
 .ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover {
     border-bottom-color: transparent;
 }
+@media screen and (max-width: 499px) {
+    .menuBar {
+        padding: 0;
 
-@media (max-width: 767px) {
+        #menuCon .hamburger {
+            display: block;
+            float: right;
+            margin-top: 12px;
+            padding-top: 3px;
+            width: 43px;
+            height: 40px;
+        }
+
+        .barsMenu {
+            display: inline-block;
+        }
+
+        .leftMenu,
+        .rightMenu {
+            display: none;
+        }
+
+        .menuCon .ant-menu-item,
+        .menuCon .ant-menu-submenu-title {
+            padding: 1px 20px;
+        }
+
+        .logo {
+            width: 270px;
+            float: left;
+
+            img,
+            svg,
+            object {
+                width: 270px;
+            }
+        }
+
+        .hamburger i,
+        .hamburger svg {
+            font-size: 28px;
+        }
+
+        #menuCon {
+            float: right;
+            margin-right: 7px;
+        }
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
     .menuBar #menuCon .hamburger {
         display: block;
         float: right;
@@ -82,7 +133,8 @@
         width: 43px;
         height: 40px;
     }
-    .hamburger i, .hamburger svg {
+    .hamburger i,
+    .hamburger svg {
         font-size: 28px;
     }
 
@@ -99,8 +151,5 @@
     .menuCon .ant-menu-item,
     .menuCon .ant-menu-submenu-title {
         padding: 1px 20px;
-    }
-    .logo a {
-        padding: 10px 20px;
     }
 }
