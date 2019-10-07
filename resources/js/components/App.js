@@ -3,14 +3,13 @@ import ReactDOM from "react-dom";
 import Home from "../pages/Home/Home";
 import Navbar from "./Navigation/Navbar";
 import Footer from "./Footer";
-import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import NotFound from "./errors/NotFound";
 import "antd/dist/antd.css";
-import { version, Button } from "antd";
 import Contact from "../pages/Contact/Contact";
 import Services from "../pages/Services/Services";
 import About from "../pages/About/About";
-import CookieConsent, { Cookies } from "react-cookie-consent";
+import CookieConsent from "react-cookie-consent";
 
 function App() {
     return (
@@ -23,6 +22,8 @@ function App() {
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route component={NotFound} />
+
+                <Route path="/blog" component={Services} />
             </Switch>
 
             <Footer />

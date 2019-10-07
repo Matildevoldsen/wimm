@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./Home.scss";
-import { Icon } from 'antd';
-import QueueAnim from "rc-queue-anim";
-import TweenOne from 'rc-tween-one';
-import Texty from 'rc-texty';
-import 'rc-texty/assets/index.css';
+import Banner from "./Banner";
+import Content0 from './Content0';
 
 class Home extends Component {
     getEnter(e) {
@@ -79,25 +76,9 @@ class Home extends Component {
       }
     render() {
         return (
-            <div className="banner0">
-                <QueueAnim key="QueueAnim" type={["bottom", "top"]} delay={320}>
-                    <div className="banner0-content">
-                        <Texty className="title" enter={this.getEnter} leave={this.getEnter}>We help building the web</Texty>
-                        <Texty className="subtitle" enter={this.getEnter} leave={this.getEnter}>We help you build user-friendly websites that ranks higher on Google.</Texty>
-                    </div>
-                </QueueAnim>
-                <TweenOne
-                    animation={{
-                        y: "-=20",
-                        yoyo: true,
-                        repeat: -1,
-                        duration: 1000
-                    }}
-                    className="banner0-icon"
-                    key="icon"
-                >
-                    <Icon type="down" />
-                </TweenOne>
+            <div>
+                <Banner />
+                <Content0 /><br/><br/><br/><br/><br/>
             </div>
         );
     }

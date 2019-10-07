@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
 import { Link } from 'react-router-dom';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+
 class RightMenu extends Component {
   render() {
     return (
@@ -20,7 +19,7 @@ class RightMenu extends Component {
         </Menu.Item>
 
         <Menu.Item key="blog">
-          <Link to="/about">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </Menu.Item>
 
         <Menu.Item key="contact">

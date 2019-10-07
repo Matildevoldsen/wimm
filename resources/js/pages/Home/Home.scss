@@ -4,10 +4,32 @@
     position: relative;
     text-align: center;
     border-color: #666;
-    background-image: url("https://zos.alipayobjects.com/rmsportal/gGlUMYGEIvjDOOw.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.no-webp {
+    background-image: url('/storage/banner/banner.jpg');
+}
+
+.use-webp {
+    background-image: url('/storage/banner/banner.webp');
+}
+
+.content0 {
+    padding: 80px 50px;
+    text-align: center;
+
+    .iconBig {
+        font-size: 70px;
+        color: #1890ff;
+    }
+
+    .iconText {
+        font-size: 24px;
+        margin-top: 5px;
+    }
 }
 
 .banner0 .banner0-content {
@@ -90,6 +112,20 @@
     color: #fff;
 }
 @media screen and (max-width: 767px) {
+    .content0 {
+        .ant-row-flex {
+            .ant-col {
+                width: 63%;
+                flex-direction: column;
+                margin: 0 auto;
+
+                .iconContent {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+
     .banner0 {
         background-attachment: inherit;
 
