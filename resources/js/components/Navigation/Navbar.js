@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
-import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { Drawer, Button, Icon } from "antd";
 import './Navbar.scss';

@@ -10,6 +10,8 @@ import Contact from "../pages/Contact/Contact";
 import Services from "../pages/Services/Services";
 import About from "../pages/About/About";
 import CookieConsent from "react-cookie-consent";
+import { connect } from "react-redux";
+import Blog from "../pages/Blog/Blog";
 
 function App() {
     return (
@@ -21,9 +23,9 @@ function App() {
                 <Route path="/services" component={Services} />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
-                <Route component={NotFound} />
+                <Route path="/blog" component={Blog} />
 
-                <Route path="/blog" component={Services} />
+                <Route component={NotFound} />
             </Switch>
 
             <Footer />
@@ -42,7 +44,7 @@ function App() {
     );
 }
 
-export default App;
+export default connect()(App);
 
 if (document.getElementById("app")) {
     ReactDOM.render(<App />, document.getElementById("app"));

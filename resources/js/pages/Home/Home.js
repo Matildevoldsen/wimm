@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Home.scss";
 import Banner from "./Banner";
 import Content0 from './Content0';
+import Content1 from './Content1'
 
 class Home extends Component {
     getEnter(e) {
@@ -78,7 +79,8 @@ class Home extends Component {
         return (
             <div>
                 <Banner />
-                <Content0 /><br/><br/><br/><br/><br/>
+                <Content0 />
+                <Content1 /><br /><br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /> <br /><br /><br /><br /><br />
             </div>
         );
     }

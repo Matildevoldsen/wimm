@@ -39,7 +39,7 @@ class Content0 extends Component {
                                 </div>
                                 <p>
                                     We will ensure your website gets deployed to
-                                    DigitalOcean and get you a domain name. We
+                                    AWS and get you a domain name. We
                                     will also add in a SSL certificate for your
                                     website free of charge.
                                 </p>

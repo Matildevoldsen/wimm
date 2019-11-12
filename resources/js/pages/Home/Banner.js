@@ -50,8 +50,8 @@ class Banner extends Component {
                             enter={this.getEnter}
                             leave={this.getEnter}
                         >
-                            We help you build user-friendly websites that ranks
-                            higher on Google.
+                            We build user-friendly websites that ranks
+                            higher on Google. All of our client's websites is hosted using CloudFront and AWS to reach maximun performance.
                         </Texty>
                     </div>
                 </QueueAnim>
